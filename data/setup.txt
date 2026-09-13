@@ -1,0 +1,5 @@
+1. run the command bellow to download the counterfact dataset:
+curl -o counterfact.json https://rome.baulab.info/data/dsets/counterfact.json
+
+2. run the script below to extract the counterfact plus data:
+py extract_cf_plus.py
