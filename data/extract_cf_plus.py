@@ -12,6 +12,7 @@ def generate_counterfact_plus():
         subject = record['requested_rewrite']['subject']
         prompt_template = record['requested_rewrite']['prompt']
         target_new = record['requested_rewrite']['target_new']['str']
+        target_true = record['requested_rewrite']['target_true']['str']
         
         # Formulate the explicit target edit sentence (e.g., "The Louvre is in Rome.")
         # Note: We replace the {} placeholder in the prompt with the subject
@@ -37,6 +38,7 @@ def generate_counterfact_plus():
             "case_id": record["case_id"],
             "edit_statement": edit_statement,
             "efficacy_prompt": efficacy_prompt,
+            "target_true": target_true,
             "target_new": target_new,
             "generalization_prompts": generalization_prompts,
             "locality_base_prompts": neighborhood_prompts,
