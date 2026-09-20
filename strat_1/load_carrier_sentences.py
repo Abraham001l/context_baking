@@ -8,7 +8,7 @@ def download_wiki_sentences(output_path="data/wiki_sentences.json", count=160):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
     # Load the standard raw wikitext dataset
-    dataset = load_dataset("wikitext", "wikitext-2-raw-v1", split="train")
+    dataset = load_dataset("Salesforce/wikitext", "wikitext-2-raw-v1", split="train")
     
     sentences = []
     for row in dataset:
