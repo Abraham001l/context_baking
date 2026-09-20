@@ -2,3 +2,4 @@
 __pycache__
 *.json
 models/
+setup_docker_cmds.txt
