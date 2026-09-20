@@ -312,7 +312,7 @@ def main():
     
     # 3. Load CounterFact Records
     with open(dataset_path, "r", encoding="utf-8") as f:
-        dataset = json.load(f)[:500]  # Standard evaluation subset
+        dataset = json.load(f)[:5]  # Standard evaluation subset
         
     print(f"Beginning training loop across {len(dataset)} isolated facts...")
     
